@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Jordan Paris - Assignment 2 Main Page</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="calculator.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            height: 232px;
+            width: 259px;
+        }
+        .auto-style2 {
+            height: 45px;
+            width: 259px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainBody">
+    <h3 style="margin: 0;">HTML/CSS Javascript calculator - Assignment 2</h3>
+    <h4>- Jordan Paris</h4>
+<!--/*   */-->
+
+
+<FORM name="calculator">
+<TABLE BORDER=4 cellspacing="5" cellpadding="5">
+<TR>
+<TD class="auto-style2">
+<input type="text" name="Input" size="35" style="height: 28px; font-family: Verdana; font-weight: bold; font-size: 14pt; width: 239px; text-align: center; border-style: none;">
+<br>
+</TD>
+</TR>
+<TR style="margin: 10px;">
+<TD class="auto-style1">
+<input type="button" name="clear" value="  CE  " style="width: 120px;" onclick="calculator.Input.value = ''" />
+    <!--I'm having issues with the % calculation doing this method. you can do "10%100 and hit enter and get the correct value, but it seems doing any other calculations causes problems.-->
+<input type="button" name="percent" value="  %  " onclick="calculator.Input.value += '%'" style="position: relative; margin-left: 64px; top: 0px; left: 0px;"/>
+<br />
+<input type="button" name="seven" value="  7  " onclick="calculator.Input.value += '7'" />
+<input type="button" name="eight" value="  8  " onclick="calculator.Input.value += '8'" />
+<input type="button" name="nine"  value="  9  " onclick="calculator.Input.value += '9'" />
+<input type="button" name="divide"   value="  /  " onclick="calculator.Input.value += ' / '" />
+<br />
+<input type="button" name="four"  value="  4  " onclick="calculator.Input.value += '4'" />
+<input type="button" name="five"  value="  5  " onclick="calculator.Input.value += '5'" />
+<input type="button" name="six"   value="  6  " onclick="calculator.Input.value += '6'" />
+<input type="button" name="multiply" value="  x  " onclick="calculator.Input.value += ' * '" />
+<br />
+<input type="button" name="one"   value="  1  " onclick="calculator.Input.value += '1'" />
+<input type="button" name="two"   value="  2  " onclick="calculator.Input.value += '2'" />
+<input type="button" name="three" value="  3  " onclick="calculator.Input.value += '3'" />
+<input type="button" name="minus" value="  -  " onclick="calculator.Input.value += ' - '" />
+<br>
+<input type="button" name="zero"  value="  0  " onclick="calculator.Input.value += '0'" />
+<input type="button" name="dot"  value="  .  " onclick="calculator.Input.value += '.'" />
+<input type="button" name="calculate"  value="  =  " onclick="calculator.Input.value = eval(calculator.Input.value)" />
+    <!--If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.-->
+<input type="button" name="plus"  value="  +  " onclick="calculator.Input.value += ' + '" />
+
+
+<br />
+</TD>
+</TR>
+</TABLE>
+</FORM>
+
+        <p></p>
+        <ul>
+            <li><a href="feedback.html">Feedback Form</a></li>
+            <li><a href="registration.html">Registration Form</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+ </div>
+</body>
+</html>

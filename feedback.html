@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Jordan Paris - Feedback Form - Assignment 2</title>
+    <link href="style/orig.css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript">
+                function submit2() {
+                if (document.getElementById('email').value.trim() == "") {
+                    alert('Please enter an email address');
+                    document.getElementById('email').focus();
+                    return false;
+                }
+                if (document.getElementById('comment').value.trim() == "") {
+                    alert('Please enter a comment.');
+                    document.getElementById('comment').focus();
+                    return false;
+                }
+                return true;
+            }
+    </script>
+</head>
+<body>
+    <h3>Jordan Paris - Feedback Form - Assignment 2</h3>
+    <br />
+    <form name="feedback" action="" onsubmit="return submit2()">
+    Email: <input type="text" id="email" style="width: 200px;" />
+        <br />
+        Comments:
+        <TEXTAREA id="comment" ROWS="5" COLS="45"></TEXTAREA>
+        <p></p>
+        <input type="submit" value="Submit Form" />
+        
+    </form>
+    <p><a href="index.html">Return Home</a></p>
+</body>
+</html>
